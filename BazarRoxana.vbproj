@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE84812C-C506-437F-A72C-C655F9B3B464}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BazarRoxana.My.MyApplication</StartupObject>
+    <RootNamespace>BazarRoxana</RootNamespace>
+    <AssemblyName>BazarRoxana</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BazarRoxana.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BazarRoxana.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>BR.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BazarRoxana.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazarRoxana.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BazarRoxana.vb">
+      <DependentUpon>BazarRoxana.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarCliente.Designer.vb">
+      <DependentUpon>BuscarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarProducto.Designer.vb">
+      <DependentUpon>BuscarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorias.Designer.vb">
+      <DependentUpon>Categorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Categorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras.Designer.vb">
+      <DependentUpon>Compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConexionLogin.vb" />
+    <Compile Include="Empleado.Designer.vb">
+      <DependentUpon>Empleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturaVenta.Designer.vb">
+      <DependentUpon>FacturaVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FacturaVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusquedaCategoria.Designer.vb">
+      <DependentUpon>FrmBusquedaCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusquedaCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusquedaProveedor.Designer.vb">
+      <DependentUpon>FrmBusquedaProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusquedaProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.vb">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Minimo.Designer.vb">
+      <DependentUpon>Minimo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Minimo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Productos.Designer.vb">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores.Designer.vb">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteCliente.Designer.vb">
+      <DependentUpon>ReporteCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteCompra.Designer.vb">
+      <DependentUpon>ReporteCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteCompraParametro.Designer.vb">
+      <DependentUpon>ReporteCompraParametro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCompraParametro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEmpleados.Designer.vb">
+      <DependentUpon>ReporteEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMasVendido.Designer.vb">
+      <DependentUpon>ReporteMasVendido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMasVendido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteProductoParametro.Designer.vb">
+      <DependentUpon>ReporteProductoParametro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteProductoParametro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteProveedores.Designer.vb">
+      <DependentUpon>ReporteProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteVenta.Designer.vb">
+      <DependentUpon>ReporteVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteVentaParametro.Designer.vb">
+      <DependentUpon>ReporteVentaParametro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteVentaParametro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.vb">
+      <DependentUpon>Ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BuscarCliente.resx">
+      <DependentUpon>BuscarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarProducto.resx">
+      <DependentUpon>BuscarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categorias.resx">
+      <DependentUpon>Categorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras.resx">
+      <DependentUpon>Compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado.resx">
+      <DependentUpon>Empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturaVenta.rdlc" />
+    <EmbeddedResource Include="FacturaVenta.resx">
+      <DependentUpon>FacturaVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusquedaCategoria.resx">
+      <DependentUpon>FrmBusquedaCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusquedaProveedor.resx">
+      <DependentUpon>FrmBusquedaProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Minimo.resx">
+      <DependentUpon>Minimo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores.resx">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCliente.resx">
+      <DependentUpon>ReporteCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCompra.resx">
+      <DependentUpon>ReporteCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCompraParametro.resx">
+      <DependentUpon>ReporteCompraParametro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEmpleados.resx">
+      <DependentUpon>ReporteEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMasVendido.resx">
+      <DependentUpon>ReporteMasVendido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteProductoParametro.resx">
+      <DependentUpon>ReporteProductoParametro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteProveedores.resx">
+      <DependentUpon>ReporteProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteVenta.resx">
+      <DependentUpon>ReporteVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteVentaParametro.resx">
+      <DependentUpon>ReporteVentaParametro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RpCliente.rdlc" />
+    <EmbeddedResource Include="RpCompra.rdlc" />
+    <EmbeddedResource Include="RpCompraParametro.rdlc" />
+    <EmbeddedResource Include="RpEmpleados.rdlc" />
+    <EmbeddedResource Include="RpMasVendido.rdlc" />
+    <EmbeddedResource Include="RpProductoParametro.rdlc" />
+    <EmbeddedResource Include="RpProveedores.rdlc" />
+    <EmbeddedResource Include="RpVenta.rdlc" />
+    <EmbeddedResource Include="RpVentaParametro.rdlc" />
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BazarRoxana.xsc">
+      <DependentUpon>BazarRoxana.xsd</DependentUpon>
+    </None>
+    <None Include="BazarRoxana.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazarRoxana.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="BazarRoxana.xss">
+      <DependentUpon>BazarRoxana.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\ic_account_child_128_28130.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_archive_128_28227.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_assignment_128_28219.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_assignment_ind_128_28218.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_attach_money_128_28210.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_description_128_28266.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_face_unlock_128_28406.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_local_shipping_128_28443.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_shopping_cart_128_28698.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_37128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_home_128_28521.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginFondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BazarRoxana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4TbaKqxqc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginFondo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuarios1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-04-08 at 10.15.57 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-04-08 at 10.15.57 PM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-artem-beliaikin-1036856.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-04-09 at 1.07.45 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-artem-beliaikin-10368561.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-archie-binamira-2463346.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_icon-icons.com_66534.ico" />
+    <Content Include="BR.ico" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
